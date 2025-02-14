@@ -22,12 +22,14 @@
     justify-content: center;
     gap: 20px;
     position: absolute;
+    translate: -50%;
+    left: 50%;
     z-index: 5;
     color: #fff;
 }
 .heroSection::before {
     content: "";
-    background: #000;
+    background: #4f1717np;
     width: 100%;
     height: 100%;
     display: block;
@@ -41,7 +43,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     color: #fff;
-    
+}
+
+@media (min-width: 768px) {
+    .bestsellerSection {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 /* .bestsellerSection div {
@@ -132,4 +139,8 @@ ol {
 }
 .cart-button:active {
     background-color: #0e504e !important;
+}
+
+footer {
+    background-color: #fff;
 }

@@ -26,6 +26,9 @@ function Home() {
     { id: 3, img: Img3, name: "Lily", desc: "Elegant lily", price: 70 },
     { id: 4, img: Img4, name: "Orchid", desc: "Exotic orchid", price: 80 },
     { id: 5, img: Img5, name: "Daisy", desc: "Cheerful daisy", price: 50 },
+    { id: 1, img: Img1, name: "Rose", desc: "Lorem lorem", price: 55 },
+    { id: 2, img: Img2, name: "Tulip", desc: "Beautiful tulip", price: 60 },
+    { id: 3, img: Img3, name: "Lily", desc: "Elegant lily", price: 70 }
   ];
 
   const toggleShowAll = () => {
@@ -115,7 +118,7 @@ function Home() {
       )} */}
 
       <section className="heroSection">
-        <div className="heroText">
+        <div className="heroText container">
           <h1>{property.name}</h1>
           <h4>{property.market}</h4>
           <p>{property.description}</p>
@@ -185,7 +188,7 @@ function Home() {
       <hr />
       <h3 className="katalogDec mt-4">Katalog</h3>
       <section className="bestsellerSection container mt-3">
-        {(showAll ? products : products.slice(0, 2)).map((product) => (
+        {(showAll ? products : products.slice(0, 4)).map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.img} alt={product.name} />
             <article>
