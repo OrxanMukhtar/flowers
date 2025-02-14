@@ -29,7 +29,7 @@
 }
 .heroSection::before {
     content: "";
-    background: #4f1717np;
+    background: #4f1717;
     width: 100%;
     height: 100%;
     display: block;
